@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaldboxStudio | Diseño Visual y Desarrollo Digital</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Definición de Variables de Color */
+        :root {
+            --color-carbon: #0E0E0E; /* Negro Carbón (Texto principal) */
+            --color-steel-gray: #7A7A7A; /* Gris Acero (Detalles) */
+            --color-white: #FFFFFF; /* Blanco Puro (Fondo) */
+            --color-accent-blue: #3A7BFF; /* Azul Eléctrico Suave (Acento) */
+        }
+        
+        /* Estilos Globales */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-white);
+            color: var(--color-carbon);
+            line-height: 1.6;
+            /* Desplazamiento suave al hacer clic en enlaces internos */
+            scroll-behavior: smooth; 
+        }
+
+        /* Contenedor principal para centrar el contenido */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* ------------------------------------- */
+        /* HEADER y Navegación */
+        /* ------------------------------------- */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #E0E0E0;
+        }
+
+        /* ** SOLUCIÓN DEL LOGO: TAMAÑO FORZADO ** */
+        .logo-img {
+            height: 50px; 
+            width: auto; 
+            max-height: 50px; 
+            vertical-align: middle;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--color-carbon);
+            font-weight: 600;
+            margin-left: 25px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--color-accent-blue);
+        }
+
+        /* ------------------------------------- */
+        /* HERO (Sección Principal) */
+        /* ------------------------------------- */
+        .hero {
+            text-align: center;
+            padding: 120px 20px;
+            background-color: #fcfcfc;
+        }
+        
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            color: var(--color-carbon);
+        }
+        
+        .hero p {
+            font-size: 1.5em;
+            color: var(--color-steel-gray);
+            font-weight: 400;
+        }
+        
+        .accent {
+            color: var(--color-accent-blue);
+            font-weight: 800;
+        }
+
+        /* ------------------------------------- */
+        /* SERVICIOS */
+        /* ------------------------------------- */
+        .services {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .services h2 {
+            color: var(--color-carbon);
+            margin-bottom: 40px;
+            font-size: 2em;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .skills-list li {
+            background-color: var(--color-carbon);
+            color: var(--color-white);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        
+        /* ------------------------------------- */
+        /* FOOTER y CONTACTO */
+        /* ------------------------------------- */
+        footer {
+            background-color: var(--color-carbon);
+            color: var(--color-white);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer h3 {
+            color: var(--color-accent-blue);
+            margin-bottom: 30px;
+            font-size: 1.8em;
+        }
+
+        .contact-info a {
+            color: var(--color-white);
+            background-color: var(--color-steel-gray);
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin: 0 10px;
+            display: inline-block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        .contact-info a:hover {
+            background-color: var(--color-accent-blue);
+        }
+
+        .copyright {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: var(--color-steel-gray);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="#hero">
+                <img src="logo.jpeg" alt="BaldboxStudio Logo" class="logo-img">
+            </a>
+            <nav>
+                <a href="#servicios">Servicios</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </header>
+
+        <section id="hero" class="hero">
+            <h1>BaldboxStudio</h1>
+            <p>Diseño visual | <span class="accent">Desarrollo digital</span></p>
+            <p>Transformamos ideas en realidad digital con creatividad y precisión. Somos expertos en herramientas de diseño y desarrollo web.</p>
+        </section>
+
+        <section id="servicios" class="services">
+            <h2>Nuestras <span class="accent">Habilidades Clave</span></h2>
+            <p>Nos especializamos en las herramientas más potentes del mercado para garantizar resultados profesionales en cada proyecto:</p>
+            
+            <ul class="skills-list">
+                <li><span class="accent">#</span> PhotoShop (PS)</li>
+                <li><span class="accent">#</span> Canva</li>
+                <li><span class="accent">#</span> CapCut</li>
+                <li><span class="accent">#</span> AutoCAD</li>
+                <li><span class="accent">#</span> Creación de páginas web (HTML)</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer id="contacto">
+        <h3>¿Listo para trabajar juntos?</h3>
+        <p>Contáctanos directamente con un clic.</p>
+
+        <div class="contact-info">
+            <a href="https://wa.me/5215575149832" target="_blank">WhatsApp (55 7514 9832)</a>
+            <a href="https://www.instagram.com/baldboxstudio" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/share/19ivVrDjU8/" target="_blank">Facebook</a>
+        </div>
+        
+        <p class="copyright">
+            © 2025 BaldboxStudio. Desarrollado por Diego Aarón Balderas Juárez.
+        </p>
+    </footer>
+</body>
+</html>
